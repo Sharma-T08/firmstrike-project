@@ -791,6 +791,8 @@ export async function runScanPipeline(
      * Explicit malware OR threat score >= 70.
      */
 
+    console.log("Deduped:", dedupedMalwareResults.length);
+    console.log("Malware details:", JSON.stringify(dedupedMalwareResults, null, 2));
     const malwareCount =
       dedupedMalwareResults.filter(
         (malware: any) =>
