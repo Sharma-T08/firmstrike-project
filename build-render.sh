@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-echo "Enabling Corepack..."
-corepack enable
-
 echo "Installing Node dependencies..."
 pnpm install --frozen-lockfile
 
