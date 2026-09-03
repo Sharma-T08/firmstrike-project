@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://firmstrike-project-tlvg.onrender.com/api/:path*"
+    }
+  ]
+}
