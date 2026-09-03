@@ -175,7 +175,7 @@ res = scan_firmware(${JSON.stringify(filePath)}, ${JSON.stringify(extractPath)},
 print(json.dumps(res))
 `;
 
-  const { stdout } = await execFileAsync("python3", ["-c", pythonScript], {
+  const { stdout } = await execFileAsync("python", ["-c", pythonScript], {
     cwd: pythonDir,
     maxBuffer: 50 * 1024 * 1024,
   });
